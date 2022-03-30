@@ -12,7 +12,7 @@
 <body style="text-align: center">
   <canvas id="unity-canvas" width=1280 height=720
     style="width: 1280px; height: 720px; background: #231F20"></canvas>
-  <script src="Build/Solar Panel Build.loader.js"></script>
+  <script src="Build/Solar-Panel.loader.js"></script>
   <script src="https://unpkg.com/@solana/web3.js@latest/lib/index.iife.js"> </script>
   <script>
       let connection = new solanaWeb3.Connection(solanaWeb3.clusterApiUrl('mainnet-beta'));
@@ -21,9 +21,9 @@
     var webglPlayer;
     onload = () => {
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/Solar Panel Build.data",
-        frameworkUrl: "Build/Solar Panel Build.framework.js",
-        codeUrl: "Build/Solar Panel Build.wasm",
+        dataUrl: "Build/Solar-Panel.data",
+        frameworkUrl: "Build/Solar-Panel.framework.js",
+        codeUrl: "Build/Solar-Panel.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Zen Republic",
         productName: "Solar Panel",
